@@ -9,9 +9,7 @@
     var count = 0
 
     return this.each(function() {
-      // Do something to each element here.
       var _results = [];
-      // var re;
       var _term = options['term'];
       var _this = $(this);
 
@@ -44,7 +42,5 @@
     var re;
     return html.replace(" " + word + " ", " <span class=\"definition\">" + word + "<span class=\"definition_tooltip\">" + def + "</span></span> ", "gi");
   }
-
-
 }( jQuery ));
 
